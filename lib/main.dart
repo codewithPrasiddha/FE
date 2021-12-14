@@ -1,24 +1,17 @@
-// Copyright 2018 The Flutter team. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'package:flutter/material.dart';
+import 'package:vhc/login_page.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Virtual Health Consultation',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome to VHC'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+    return const MaterialApp(
+      home: LoginPage(),
     );
   }
 }
